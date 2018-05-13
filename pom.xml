@@ -22,6 +22,7 @@
         <java.version>1.8</java.version>
         <java.source>1.8</java.source>
         <java.target>1.8</java.target>
+        <passwordSql>az09az09</passwordSql>
     </properties>
 
     <dependencies>
@@ -174,7 +175,7 @@
                             characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull
                         </url>
                         <user>root</user>
-                        <password>3005</password>
+                        <password>${passwordSql}</password>
                     </jdbc>
 
                     <generator>
@@ -218,7 +219,7 @@
                         </systemProperty>
                         <systemProperty>
                             <key>jdbc.password</key>
-                            <value>3005</value>
+                            <value>${passwordSql}</value>
                         </systemProperty>
                         <systemProperty>
                             <key>jdbc.url</key>

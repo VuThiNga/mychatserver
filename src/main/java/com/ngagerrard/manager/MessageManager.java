@@ -29,6 +29,7 @@ public class MessageManager {
     @Autowired
     DSLContext dslContext;
     public Object createMessage(MessageRequest request){
+
         int id = getIdFromToken();
         MessagesRecord record= dslContext.insertInto(Messages.MESSAGES,
                 Messages.MESSAGES.CONVERSATION_ID, Messages.MESSAGES.SENDER_ID,

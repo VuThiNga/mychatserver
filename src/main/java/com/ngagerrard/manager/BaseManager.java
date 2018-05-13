@@ -51,7 +51,6 @@ public class BaseManager {
     public DefaultConfiguration configuration() {
         DefaultConfiguration jooqConfiguration = new DefaultConfiguration();
         jooqConfiguration.set(connectionProvider());
-//        jooqConfiguration.set(new DefaultExecuteListenerProvider(exceptionTransformer()));
         jooqConfiguration.setSQLDialect(SQLDialect.MYSQL);
         Settings settings = new Settings();
         settings.setRenderSchema(Boolean.FALSE);

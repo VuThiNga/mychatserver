@@ -22,7 +22,7 @@ public class SocketManager {
     public void inits() {
         LOG.info("Start socket");
         com.corundumstudio.socketio.Configuration config = new com.corundumstudio.socketio.Configuration();
-        config.setHostname("192.168.137.2");
+        config.setHostname("10.255.149.74");
         config.setPort(9092);
         socketIOServer = new SocketIOServer(config);
         socketIOServer.addConnectListener(new ConnectListener() {
